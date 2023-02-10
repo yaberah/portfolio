@@ -20,6 +20,9 @@
     "project": "./tsconfig.json"
   },
   "plugins": ["react", "react-hooks"],
+  "ignorePatterns": [
+    "vite.config.ts"
+  ],
   "rules": {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
