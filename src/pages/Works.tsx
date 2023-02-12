@@ -1,6 +1,8 @@
 import { useState, useEffect } from 'react';
 import getPosts from '@/features/getPosts';
 
+import Article from '@/components/Article';
+
 const { getCollection } = getPosts();
  
 const Works: React.FC = () => {
@@ -16,7 +18,13 @@ const Works: React.FC = () => {
       <p>Works</p>
         {
           posts.map(post => (
-            <div key={post.id}>{post.title}</div>
+            <Article
+              id={post.id}
+              slug={post.slug}
+              title={post.title}
+              contents={post.contents}
+              key={post.id}
+            />
           ))
         }
     </>

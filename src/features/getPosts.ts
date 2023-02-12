@@ -8,6 +8,7 @@ export default () => {
       .then((data) => {
         return data.items.map((item) => ({
             id: item.sys.id,
+            slug: item.fields.slug,
             title: item.fields.title,
             contents: item.fields.contents,
           })
