@@ -9,6 +9,7 @@ import Index from "@/pages/Index";
 import About from "@/pages/About";
 import Skills from "@/pages/Skills";
 import Works from "@/pages/Works";
+import WorkDetail from "@/pages/WorkDetail";
 import Contacts from "@/pages/Contacts";
 import Error from "@/pages/Error";
 
@@ -28,6 +29,7 @@ const router = createBrowserRouter([
       { path: "about", element: <About /> },
       { path: "/skills", element: <Skills /> },
       { path: "/works", element: <Works /> },
+      { path: "/works/:id", element: <WorkDetail /> },
       { path: "/contacts", element: <Contacts /> },
     ],
   },
